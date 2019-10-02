@@ -1,0 +1,80 @@
+.octodex {
+    display: flex;
+    flex-wrap: wrap; /* trying to help it be more responsive when resizing for epic mode challenge */
+}
+
+.octocat {
+    padding: 10px;
+    position: relative;
+}
+
+.octocat img { 
+    display: flex;
+    width:400px;
+    height:400px;
+    padding: 1px;
+    margin: 1px;
+    border: 1px solid lightgray;
+}
+
+.image-footer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.image-caption {
+    display:flex;
+    align-items: center;
+}
+
+.image-caption span {
+    padding: 0 5px;
+}
+
+.image-number {
+    display: flex;
+    padding-left: 5px;
+    padding-top: 4px;
+}
+
+.authors img {
+    width: 25px;
+    height: 25px;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.authors img span {
+    padding: 0px;
+}
+
+.authors li {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-number::before {
+    content: "#";
+}
+
+.octocat:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    border-color: #ff0055 transparent transparent transparent;
+    right: 23px;
+    bottom: 44px;
+}
+
+
